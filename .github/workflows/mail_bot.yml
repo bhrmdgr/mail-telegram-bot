@@ -2,7 +2,7 @@ name: Mail Bot Workflow
 
 on:
   schedule:
-    - cron: '* * * * *'  # Her dakikada bir çalışacak
+    - cron: '*/5 * * * *'  # Her dakikada bir çalışacak
   push:
     branches:
       - main  # Sadece ana branşta değişiklik yapıldığında çalışır
