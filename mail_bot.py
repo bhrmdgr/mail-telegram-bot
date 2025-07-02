@@ -29,7 +29,7 @@ def send_to_telegram(subject, sender, date, body):
     date = escape_markdown(date)
     body = escape_markdown(body)
 
-    message = f"📩 *Yeni Mail*\n\n*Başlıkk:* {subject}\n*Gönderenn:* {sender}\n*Tarih:* {date}\n\n*İçerik:*\n{body}"
+    message = f"📩 *Yeni Mail*\n\n*Başlıkk:* {subject}\n*Gönderenn:* {sender}\n*Tarih:* {date}\n\n*İçerikk:*\n{body}"
 
     url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
     payload = {
